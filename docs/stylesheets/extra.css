@@ -1,4 +1,0 @@
-/* Ukrycie podpisu "Made with Zensical" w stopce strony */
-.md-footer-meta__generative {
-    display: none !important;
-}
