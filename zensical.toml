@@ -1,15 +1,101 @@
 [project]
 site_name = "Mój Homelab"
-description = "Moje ściągawki i konfiguracje"
+site_description = "Moje ściągawki i konfiguracje"
+site_author = "nodecloud-ui"
+site_url = "https://github.io"
+copyright = "Copyright &copy; 2026 nodecloud-ui"
+dev_addr = "0.0.0.0:8000"
+repo_name = "nodecloud-ui/homelab-docs"
+repo_url = "https://github.com"
+edit_uri = "edit/main/docs/"
 
-[theme]
-name = "modern"
-# Zensical akceptuje dla ciemnego trybu wyłącznie słowo "slate"
-scheme = "slate" 
+[[project.nav]]
+Home = "index.md"
 
-[markdown]
-extensions = [
-    "admonition",
-    "pymdownx.superfences",
-    "pymdownx.highlight"
+[project.theme]
+name = "material"
+primary = "teal"
+accent = "teal"
+features = [
+    "content.action.edit",
+    "content.action.view",
+    "content.code.copy",
+    "content.code.select",
+    "content.code.annotate",
+    "content.tabs.link",
 ]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle = { icon = "material/brightness-auto", name = "Switch to light mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle = { icon = "material/brightness-7", name = "Switch to dark mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle = { icon = "material/brightness-4", name = "Switch to system preference" }
+
+[project.plugins]
+search = {}
+tags = {}
+minify = { minify_html = true }
+
+[project.markdown_extensions]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.meta]
+[project.markdown_extensions.tables]
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx]
+
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+[project.markdown_extensions.pymdownx.betterem]
+smart_enable = "all"
+
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.critic]
+[project.markdown_extensions.pymdownx.details]
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+
+[project.markdown_extensions.pymdownx.magiclink]
+repo_url_shorthand = true
+user = "nodecloud-ui"
+repo = "homelab-docs"
+
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [ { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" } ]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+[project.markdown_extensions.pymdownx.tilde]
