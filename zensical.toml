@@ -15,6 +15,12 @@ generator = false
 [[project.nav]]
 Home = "index.md"
 
+[[project.nav]]
+About = [
+  { "Development" = "about/development.md" },
+  { "Future" = "about/future.md" },
+]
+
 [project.theme]
 name = "material"
 primary = "teal"
