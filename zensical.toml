@@ -5,22 +5,14 @@ description = "Moje ściągawki i konfiguracje"
 [theme]
 name = "modern"
 
-# Definiujemy dwie palety. Ta, która jest pierwsza na liście, ładuje się jako domyślna.
-[[theme.palette]]
-media = "(prefers-color-scheme)"
-scheme = "slate"       # Włącza ciemne tło (Slate)
-primary = "teal"       # Morskie nagłówki i ikony
-accent = "teal"
-toggle.icon = "lucide/sun"
-toggle.name = "Przełącz na jasny motyw"
-
-[[theme.palette]]
-media = "(prefers-color-scheme: light)"
-scheme = "default"     # Opcjonalna jasna paleta na wypadek przełączenia
-primary = "teal"
-accent = "teal"
-toggle.icon = "lucide/moon"
-toggle.name = "Przełącz na ciemny motyw"
+# Przenosimy opcje palety do dedykowanej sekcji zensical.options
+[theme.options]
+# Układ trzech ikon: 1. Auto (Systemowy), 2. Jasny, 3. Ciemny (Domyślny jako pierwszy)
+palette = [
+    { media = "(prefers-color-scheme)", scheme = "slate", primary = "teal", accent = "teal", toggle = { icon = "lucide/sun-moon", name = "Włącz tryb automatyczny" } },
+    { media = "(prefers-color-scheme: light)", scheme = "default", primary = "teal", accent = "teal", toggle = { icon = "lucide/sun", name = "Przełącz na tryb jasny" } },
+    { media = "(prefers-color-scheme: dark)", scheme = "slate", primary = "teal", accent = "teal", toggle = { icon = "lucide/moon", name = "Przełącz na tryb ciemny" } }
+]
 
 [markdown]
 extensions = [
