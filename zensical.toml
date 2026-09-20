@@ -6,3 +6,15 @@ description = "Moje ściągawki i konfiguracje"
 name = "modern"
 palette = "slate"
 primary = "teal"
+
+# Wymuszenie ciemnego motywu od razu po wejściu na stronę
+[theme.options]
+default_mode = "dark" 
+
+# Włączenie rozszerzeń dla bloków kodu i specjalnych ramek
+[markdown]
+extensions = [
+    "admonition",
+    "pymdownx.superfences",
+    "pymdownx.highlight"
+]
