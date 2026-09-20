@@ -8,6 +8,9 @@ dev_addr = "0.0.0.0:8000"
 repo_name = "nodecloud-ui/homelab-docs"
 repo_url = "https://github.com"
 edit_uri = "edit/main/docs/"
+extra_css = [
+  "stylesheets/extra.css",
+]
 
 [[project.nav]]
 Home = "index.md"
