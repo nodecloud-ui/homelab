@@ -1,0 +1,8 @@
+[project]
+name = "Mój Homelab"
+description = "Moje ściągawki i konfiguracje"
+
+[theme]
+name = "modern"
+palette = "slate"
+primary = "teal"
