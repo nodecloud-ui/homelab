@@ -1,4 +1,4 @@
-# :house_with_garden: Mój Homelab :test_tube:
+# :house_with_garden: Homelab :test_tube:
 
 Prywatne repozytorium dokumentacji, procedur wdrożeniowych i ściągawek mojego środowiska domowego.
 
