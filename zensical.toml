@@ -4,14 +4,24 @@ description = "Moje ściągawki i konfiguracje"
 
 [theme]
 name = "modern"
-palette = "slate"
+
+# Definiujemy dwie palety. Ta, która jest pierwsza na liście, ładuje się jako domyślna.
+[[theme.palette]]
+media = "(prefers-color-scheme)"
+scheme = "slate"       # Włącza ciemne tło (Slate)
+primary = "teal"       # Morskie nagłówki i ikony
+accent = "teal"
+toggle.icon = "lucide/sun"
+toggle.name = "Przełącz na jasny motyw"
+
+[[theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"     # Opcjonalna jasna paleta na wypadek przełączenia
 primary = "teal"
+accent = "teal"
+toggle.icon = "lucide/moon"
+toggle.name = "Przełącz na ciemny motyw"
 
-# Wymuszenie ciemnego motywu od razu po wejściu na stronę
-[theme.options]
-default_mode = "dark" 
-
-# Włączenie rozszerzeń dla bloków kodu i specjalnych ramek
 [markdown]
 extensions = [
     "admonition",
