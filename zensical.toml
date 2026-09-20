@@ -1,5 +1,5 @@
 [project]
-name = "Mój Homelab"
+site_name = "Mój Homelab"
 description = "Moje ściągawki i konfiguracje"
 
 [theme]
