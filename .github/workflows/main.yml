@@ -2,11 +2,14 @@ name: Deploy Zensical Docs
 on:
   push:
     branches:
-      - main # Uruchamia proces przy każdym wypchnięciu zmian do gałęzi głównej
+      - main
 permissions:
   contents: read
   pages: write
   id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 jobs:
   deploy:
     environment:
@@ -14,14 +17,18 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Install uv
-        uses: astral-sh/setup-uv@v3
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Set up Python
         uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' # Wymuszamy konkretną wersję zamiast szukać pliku zewnętrznego
       - name: Install Zensical
-        run: uv pip install --system zensical
+        run: |
+          python -m pip install --upgrade pip
+          pip install zensical
       - name: Build site
         run: zensical build
       - name: Upload artifact
