@@ -5,7 +5,7 @@ site_author = "nodecloud-ui"
 site_url = "https://docs.nodecloud.uk"
 copyright = "Copyright &copy; 2026"
 dev_addr = "0.0.0.0:8000"
-repo_name = "nodecloud-ui/homelab-docs"
+repo_name = "nodecloud-ui/homelab"
 repo_url = "https://github.com"
 edit_uri = "edit/main/docs/"
 
