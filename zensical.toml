@@ -3,7 +3,7 @@ site_name = "Mój Homelab"
 site_description = "Moje ściągawki i konfiguracje"
 site_author = "nodecloud-ui"
 site_url = "https://docs.nodecloud.uk"
-copyright = "Copyright &copy; 2026 "
+copyright = "Copyright &copy; 22026 nodecloud-ui"
 dev_addr = "0.0.0.0:8000"
 repo_name = "nodecloud-ui/homelab-docs"
 repo_url = "https://github.com"
@@ -12,6 +12,12 @@ edit_uri = "edit/main/docs/"
 [project.extra]
 generator = false
 
+social = [
+    { icon = "fontawesome/solid/house", link = "https://docs.nodecloud.uk/" },
+    { icon = "fontawesome/brands/github", link = "https://github.com/nodecloud-ui" },
+    { icon = "fontawesome/solid/key", link = "https://github.com/nodecloud.gpg" },
+]
+
 [[project.nav]]
 Home = "index.md"
 
@@ -19,6 +25,89 @@ Home = "index.md"
 About = [
   { "Development" = "about/development.md" },
   { "Future" = "about/future.md" },
+]
+
+
+[[project.nav]]
+Apps = [
+  { "AdGuard Home" = "apps/adguardhome.md" },
+  { "Home Assistant" = "apps/home-assistant.md" },
+  { "Homebox" = "apps/homebox.md" },
+  { "homepage" = "apps/homepage.md" },
+  { "Immich-Go" = "apps/immich-go.md" },
+  { "Immich" = "apps/immich.md" },
+  { "OpenMediaVault" = "apps/openmediavault.md" },
+  { "Proxmox" = "apps/proxmox.md" },
+  { "Traefik" = "apps/traefik.md" },
+  { "vaultwarden-backup" = "apps/vaultwarden-backup.md" },
+  { "Vaultwarden" = "apps/vaultwarden.md" },
+  { "!Windows 11" = "apps/w11.md" },
+]
+
+[[project.nav]]
+Hardware = [
+  { "Chromecast" = "hardware/chromecast.md" },
+  { "Intel NUC" = "hardware/nuc.md" },
+  { "Raspberry Pi 4 8GB" = "hardware/rpi4.md" },
+  { "Raspberry Pi 5 16GB" = "hardware/rpi5.md" },
+  { "UniFi" = "hardware/unifi.md" },
+  { "Wyze Cams" = "hardware/wyze-cam.md" },
+]
+
+[[project.nav]]
+"Operating Systems" = [
+  { "Raspberry Pi OS" = "os/rpios.md" },
+]
+
+[[project.nav]]
+Tools = [
+  { "Antigravity CLI" = "tools/antigravity-cli.md" },
+  { "Antigravity CLI Commands" = "tools/antigravity-commands.md" },
+  { "Antigravity" = "tools/antigravity.md" },
+  { "Apprise" = "tools/apprise.md" },
+  { "Autofs" = "tools/autofs.md" },
+  { "bat" = "tools/bat.md" },
+  { "cheat" = "tools/cheat.md" },
+  { "Google Conductor" = "tools/conductor.md" },
+  { "docker-volume-backup" = "tools/docker-volume-backup.md" },
+  { "duf" = "tools/duf.md" },
+  { ".env Files" = "tools/env-files.md" },
+  { "eza" = "tools/eza.md" },
+  { "fd" = "tools/fd.md" },
+  { "fzf" = "tools/fzf.md" },
+  { "LocalSend Go" = "tools/localsend-go.md" },
+  { "LocalSend" = "tools/localsend.md" },
+  { "LVM" = "tools/lvm.md" },
+  { "lychee" = "tools/lychee.md" },
+  { "markitdown-rs" = "tools/markitdown-rs.md" },
+  { "micro" = "tools/micro.md" },
+  { "minijinja-cli" = "tools/minijinja-cli.md" },
+  { "pass" = "tools/pass.md" },
+  { "PVE Sync" = "tools/pve-sync.md" },
+  { "pvetui" = "tools/pvetui.md" },
+  { "![rclone](https://cdn.jsdelivr.net/gh/selfhst/icons/png/rclone.png){ width=\"32\" } rclone" = "tools/rclone.md" },
+  { "restic" = "tools/restic.md" },
+  { "ripgrep" = "tools/ripgrep.md" },
+  { "rumdl" = "tools/rumdl.md" },
+  { "sd" = "tools/sd.md" },
+  { "SOPS" = "tools/sops.md" },
+  { "![syncthing](https://cdn.jsdelivr.net/gh/selfhst/icons/png/syncthing.png){ width=\"32\" } Syncthing" = "tools/syncthing.md" },
+  { "Task" = "tools/task.md" },
+  { "tmux" = "tools/tmux.md" },
+  { "typos" = "tools/typos.md" },
+  { "uv" = "tools/uv.md" },
+  { "Webhook" = "tools/webhook.md" },
+  { "yamllint-rs" = "tools/yamllint-rs.md" },
+]
+
+[[project.nav]]
+Travel = "travel.md"
+
+[[project.nav]]
+Reference = [
+  { "Cheatsheet" = "reference/cheatsheet.md" },
+  { "Emoji" = "reference/emoji.md" },
+  { "Tags" = "reference/tags.md" },
 ]
 
 [project.theme]
