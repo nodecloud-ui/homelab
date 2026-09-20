@@ -1,8 +1,4 @@
----
 # :house_with_garden: Mój Homelab :test_tube:
-
-[![szablon](https://shields.io)](https://github.com)
-[![siec](https://shields.io)](./siec/unifi-vlan30.md)
 
 Prywatne repozytorium dokumentacji, procedur wdrożeniowych i ściągawek mojego środowiska domowego.
 
@@ -11,7 +7,7 @@ Prywatne repozytorium dokumentacji, procedur wdrożeniowych i ściągawek mojego
 Całe środowisko aplikacyjne zostało skonsolidowane na jednym fizycznym hoście **Proxmox VE** i odizolowane w bezpiecznej, dedykowanej sieci sterowanej przez kontroler **UniFi**.
 
 !!! note "Ważna zasada dotycząca uprawnień"
-    Wszystkie polecenia wykonywane bezpośrednio wewnątrz kontenerów LXC w Proxmoxie są uruchamiane z poziomu konta `root`, dlatego używanie przedrostka `sudo` przed komendami nie jest wymagane.
+    Wszystkie polecenia wykonywane bezpośrednio wewnątrz kontenerów LXC in Proxmoxie są uruchamiane z poziomu konta `root`, dlatego używanie przedrostka `sudo` przed komendami nie jest wymagane.
 
 !!! info "Filozofia infrastruktury (LXC vs Docker)"
     Podobnie jak wielu zaawansowanych twórców homelabów, kluczowe, wymagające wysokiej wydajności aplikacje (takie jak **Immich** czy **Nextcloud**) wdrażam jako dedykowane, odizolowane kontenery LXC (często posiłkując się sprawdzonymi skryptami automatyzacyjnymi ze społeczności *Proxmox VE Helper-Scripts*). 
@@ -29,8 +25,8 @@ Poniższa tabela stanowi szybki punkt odniesienia do kluczowych zasobów sieciow
 | **Proxmox Host** | `10.0.30.2` | Hypervisor Proxmox VE (Węzeł: `proxmox`) |
 | **Proxmox LXC 103** | `10.0.30.3` | Docker Host, Panel Dockge (`:5001`), Rclone |
 | **Immich Server** | `10.0.30.41` / `nodecloud.uk` | Centralna galeria zdjęć i wideo (Multikonta) |
-| **Nextcloud App** | `10.0.30.44` / `nodecloud.uk` | Prywatna chmura plików (`sebastian`) |
-| **Wiki.js** | `10.0.30.45` / `nodecloud.uk` | Dotychczasowa centralna baza wiedzy |
+| **Nextcloud App** | `10.0.30.44` / `nodecloud.uk` | Private cloud (sebastian) |
+| **Wiki.js** | `10.0.30.45` / `nodecloud.uk` | Centralna baza wiedzy |
 | **Homelab Docs** | `10.0.30.46` / GitHub | Niniejszy notatnik (Silnik Zensical) |
 
 ---
