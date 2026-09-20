@@ -4,15 +4,8 @@ description = "Moje ściągawki i konfiguracje"
 
 [theme]
 name = "modern"
-
-# Przenosimy opcje palety do dedykowanej sekcji zensical.options
-[theme.options]
-# Układ trzech ikon: 1. Auto (Systemowy), 2. Jasny, 3. Ciemny (Domyślny jako pierwszy)
-palette = [
-    { media = "(prefers-color-scheme)", scheme = "slate", primary = "teal", accent = "teal", toggle = { icon = "lucide/sun-moon", name = "Włącz tryb automatyczny" } },
-    { media = "(prefers-color-scheme: light)", scheme = "default", primary = "teal", accent = "teal", toggle = { icon = "lucide/sun", name = "Przełącz na tryb jasny" } },
-    { media = "(prefers-color-scheme: dark)", scheme = "slate", primary = "teal", accent = "teal", toggle = { icon = "lucide/moon", name = "Przełącz na tryb ciemny" } }
-]
+# Zensical akceptuje dla ciemnego trybu wyłącznie słowo "slate"
+scheme = "slate" 
 
 [markdown]
 extensions = [
